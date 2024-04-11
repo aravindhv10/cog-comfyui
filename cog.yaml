@@ -67,6 +67,7 @@ build:
     - torchvision
     - tqdm
     - transformers>=4.32.1
+    - transparent-background
     - trimesh[easy]
     - ultralytics!=8.0.177
     # was-node-suite-comfyui
