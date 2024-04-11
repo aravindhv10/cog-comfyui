@@ -34,6 +34,7 @@ build:
     - matplotlib
     - matrix-client==0.4.0
     - mediapipe
+    - ninja
     - numba
     - numexpr
     - numpy>=1.22.3
@@ -48,10 +49,10 @@ build:
     - Pillow>=9.4.0
     - psutil
     - PyGithub
+    - pynvml
     - python-dateutil
     - pytorch-lightning>=2.2.1
     - pyyaml
-    - pynvml
     - regex-spm
     # - rembg
     # RemBG causes Tiny_TerraNodes to take >40s to start
