@@ -49,6 +49,7 @@ build:
     - python-dateutil
     - pytorch-lightning>=2.2.1
     - pyyaml
+    - pynvml
     - regex-spm
     # - rembg
     # RemBG causes Tiny_TerraNodes to take >40s to start
