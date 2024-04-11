@@ -5,73 +5,74 @@ build:
     - ffmpeg
   python_version: "3.10.6"
   python_packages:
-    - torch
-    - torchvision
-    - torchaudio
-    - torchsde
-    - einops
-    - transformers>=4.25.1
-    - safetensors>=0.3.0
-    - aiohttp
-    - accelerate
-    - pyyaml
-    - Pillow
-    - scipy
-    - tqdm
-    - psutil
-    - websocket-client==1.6.3
-
-    # was-node-suite-comfyui
-    # https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
-    - cmake
-    - imageio
-    - joblib
-    - matplotlib
-    - pilgram
-    - scikit-learn
-    # RemBG causes Tiny_TerraNodes to take >40s to start
-    # - rembg
-
-    # ComfyUI_essentials
-    - numba
-
-    # ComfyUI_FizzNodes
-    - pandas
-    - numexpr
-
-    # comfyui-reactor-node
-    - insightface
-    - onnx
-
-    # ComfyUI-Impact-Pack
-    - segment-anything
-    - piexif
-
-    # ComfyUI-Impact-Subpack
-    - ultralytics!=8.0.177
-
-    # comfyui_segment_anything
-    - timm
-
-    # comfyui_controlnet_aux
-    # https://github.com/Fannovel16/comfyui_controlnet_aux/blob/main/requirements.txt
-    - importlib_metadata
-    - opencv-python-headless>=4.0.1.24
-    - filelock
-    - numpy
-    - einops
-    - pyyaml
-    - scikit-image
-    - python-dateutil
-    - mediapipe
-    - svglib
-    - fvcore
-    - yapf
-    - omegaconf
-    - ftfy
+    - accelerate>=0.22.0
     - addict
-    - yacs
+    - aiohttp
+    - black
+    - cmake
+    - cmake>=3.22.3    
+    - color-matcher
+    - Cython>=0.29.28
+    - deepdiff
+    - diffusers>=0.25.0
+    - einops
+    - filelock
+    - fsspec>=2023.4.0
+    - ftfy
+    - fvcore
+    - GitPython
+    - huggingface-hub>0.20
+    - imageio
+    - importlib_metadata
+    - insightface
+    - joblib
+    - kornia>=0.7.1
+    - librosa
+    - lpips
+    - matplotlib
+    - matrix-client==0.4.0
+    - mediapipe
+    - numba
+    - numexpr
+    - numpy>=1.22.3
+    - omegaconf
+    - onnx
+    - openai-clip>=1.0.1
+    - open-clip-torch>=2.23.0
+    - opencv-python-headless>=4.0.1.24
+    - pandas
+    - piexif
+    - pilgram
+    - Pillow>=9.4.0
+    - psutil
+    - PyGithub
+    - python-dateutil
+    - pytorch-lightning>=2.2.1
+    - pyyaml
+    - regex-spm
+    # - rembg
+    # RemBG causes Tiny_TerraNodes to take >40s to start
+    - safetensors>=0.3.0
+    - scikit-image
+    - scikit-learn
+    - scipy>=1.11.4
+    - segment-anything
+    - svglib
+    - taming-transformers
+    - timm
+    - torch>=2.0.1
+    - torchaudio
+    - torchdiffeq
+    - torchsde
+    - torchvision
+    - tqdm
+    - transformers>=4.32.1
     - trimesh[easy]
+    - ultralytics!=8.0.177
+    # was-node-suite-comfyui
+    - websocket-client==1.6.3
+    - yacs
+    - yapf
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.6.0/pget_linux_x86_64" && chmod +x /usr/local/bin/pget
     - pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
