@@ -9,6 +9,7 @@ build:
     - accelerate>=0.22.0
     - addict
     - aiohttp
+    - bitsandbytes
     - black
     - cmake
     - cmake>=3.22.3    
