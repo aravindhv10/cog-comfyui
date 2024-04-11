@@ -74,6 +74,7 @@ build:
     - ultralytics!=8.0.177
     # was-node-suite-comfyui
     - websocket-client==1.6.3
+    - xformers==0.0.25
     - yacs
     - yapf
   run:
