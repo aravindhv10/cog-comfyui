@@ -3,6 +3,7 @@ build:
   cuda: "12.2"
   system_packages:
     - ffmpeg
+    - ninja-build
   python_version: "3.10.12"
   #  python_version: "3.10.6"
   python_packages:
